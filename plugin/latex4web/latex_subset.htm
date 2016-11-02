@@ -1,0 +1,1196 @@
+<html>
+<head>
+
+<meta name="Description" content="Latex to HTML Converter">
+<meta name="Keywords" content="Latex, formulas, HTML, parser, commands"> 
+<meta name="Identifier-URL" content="http://perso.wanadoo.fr/eric.chopin/latex/latex_subset.htm"> 
+<meta name="Author" content="Eric Chopin"> 
+<title>My LATEX TO HTML converter : tutorial / index of commands</title>
+<style type="text/css"> 
+body {color: black; 
+      background:"#FFCC99";  }
+
+div.p { margin-top: 7pt;}
+ td div.comp { margin-top: -0.6ex; margin-bottom: -1ex;}
+ td div.comb { margin-top: -0.6ex; margin-bottom: -.6ex;}
+ td div.norm {line-height:normal;}
+ td div.hrcomp { line-height: 0.9; margin-top: -0.8ex; margin-bottom: -1ex;}
+ span.roman {font-family: serif; font-style: normal; font-weight: normal;}
+ span.overacc2 {position: relative;  left: .8em; top: -1.2ex;}
+ span.overacc1 {position: relative;  left: .6em; top: -1.2ex;}
+ td.sqrt {border-top:2 solid black;
+          border-left:2 solid black;
+          border-bottom:none;
+          border-right:none;}
+
+</style>
+
+
+
+</head>
+
+<BODY LINK="#A000DD" VLINK="#0000FF" ALINK="#00FFFF" >
+
+<b>You are on Eric Chopin's web site (<a href="http://perso.wanadoo.fr/eric.chopin">Home</a>)</b>
+
+<hr>
+<a name="menu">
+<table border=1 width="100%">
+  <tr>
+    <td valign=top>
+      <table border=0>
+        <tr><th><font size=-1>Maths</font></th></tr>
+        <tr><td id=m001><font size=-1><a href="http://perso.wanadoo.fr/eric.chopin/ens/ens.htm">Lecture,LaTeX (fr)</a></font></td></tr>
+        <tr><td id=m002><font size=-1><a href="http://perso.wanadoo.fr/eric.chopin/pbX_en.htm">Math Exam</a></font></td></tr>
+        <tr><td id=m003><font size=-1><a href="http://perso.wanadoo.fr/eric.chopin/moines.htm">Funny enigma (fr)</a></font></td></tr>
+        <tr><td id=m004><font size=-1><a href="http://perso.wanadoo.fr/eric.chopin/misc.htm">Links (courses, databases...)</a></font></td></tr>
+      	
+      </table>
+    </td>
+    <td valign=top>
+      <table border=0>
+        <tr><th><font size=-1>Physics</font></th></tr>
+        <tr><td id=m005><font size=-1><a href="http://perso.wanadoo.fr/eric.chopin/publi-e.htm">My Research</a></font></td></tr>
+        <tr><td id=m006><font size=-1><a href="http://perso.wanadoo.fr/eric.chopin/these/these-e.htm">My PhD Thesis</a></font></td></tr>
+        <tr><td id=m007><font size=-1><a href="http://perso.wanadoo.fr/eric.chopin/lep.htm">Particle Physics at CERN (fr)</a></font></td></tr>
+        <tr><td id=m008><font size=-1><a href="http://perso.wanadoo.fr/eric.chopin/epr/bell.htm">EPR Paradox, Bell inequalities (fr)</a></font></td></tr>
+      </table>
+    </td>
+    <td valign=top>
+      <table border=0>
+        <tr><th><font size=-1>Computing</th></tr>
+	<tr><td id=m009><font size=-1><a href="http://perso.wanadoo.fr/eric.chopin/latex/latex4web.htm">My Latex to HTML parser</a></font></td></tr>
+        <tr><td id=m010><font size=-1><a href="http://perso.wanadoo.fr/eric.chopin/comp.htm">Why Linux is better</a></font></td></tr>
+        <tr><td id=m011><font size=-1><a href="http://perso.wanadoo.fr/eric.chopin/lep.htm">M symbolic calculation software</a></font></td></tr>
+      </table>
+    </td>
+    <td valign=top>
+      <table border=0>
+        <tr><th><font size=-1><a href="http://perso.wanadoo.fr/eric.chopin/index.htm#propaganda">Anti-Propaganda</a></font></th></tr>
+        <tr><td id=m012><font size=-1><a href="http://perso.wanadoo.fr/eric.chopin/spam_e.htm">Fight Spam actively</a></font></td></tr>
+        <tr><td id=m013><font size=-1><a href="http://perso.wanadoo.fr/eric.chopin/report.htm">French Congress Report about sects</a></font></td></tr>
+        <tr><td id=m014><font size=-1><a href="http://perso.wanadoo.fr/eric.chopin/homeo-e.htm">Homeopathy can be dangerous!!</a></font></td></tr>
+        <tr><td id=m015><font size=-1><a href="http://perso.wanadoo.fr/eric.chopin/index.htm#hoaxes">Hoaxes in emails: chain letters, fake virus alerts,... </a></td></tr>
+        <tr><td id=m016><font size=-1><a href="http://www.nizkor.org">Fight neo nazi propaganda</a></font></td></tr>      
+      </table>
+    </td>
+    <td valign=top>
+      <table border=0>
+        <tr><th>Misc.</th></tr>
+        <tr><td id=m017><font size=-1><a href="http://perso.wanadoo.fr/eric.chopin/index.htm#fun">Fun links</a></font></td></tr>
+	<tr><td id=m018><font size=-1><a href="http://perso.wanadoo.fr/eric.chopin/index.htm#links">Other links</a></font></td></tr>
+        <tr><td id=m019><font size=-1><a href="http://perso.wanadoo.fr/eric.chopin/misc.htm">Math/Phys. links</a></font></td></tr>
+        <tr><td id=m020><font size=-1><a href="http://perso.wanadoo.fr/eric.chopin/index.htm#contact">Contact Me</a></font></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<HR>
+
+<h1>LaTeX4Web 1.2 Manual</h1> 
+
+<p><b>This page does not explain the <a href="http://http://www.ctan.org/">TeX</a> or 
+<a href="http://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/">LaTeX</a> concepts, 
+but rather give a quick tutorial 
+of how to use the LaTeX4Web javascript, which will be easier to understand if you know  
+already some basics about LaTeX of course.</b>
+
+<p>The purpose of this script is to build web pages from some latex source. I have 
+focused essentially on mathematical formulas and cross references. All the commands 
+that are used for the page setup, styles, redefinition of commands etc are not managed 
+by the script. The script produces no images, only a pure HTML page that can be seen 
+on any browser and on any operating system in principle. It has been tested on IE4 and 
+IE6 successfully. Since it is a script, It has the great advantage compared to other similar softwares 
+that you can easily change what you want in it. You can change for instance some parts 
+of the generated HTML code or even the way some latex commands are processed. 
+
+<p>Basically, the script uses a Deterministic Finite Automata (DFA), or state machine, 
+ which can recognize a bit less than 200 keywords or token. 
+This kind of programming technique is now commonly 
+used for compilers or parsers, a lot of web sites explain how they work.
+You can add more token but then you must 
+build a specific program to generate the files required by the DFA. They are <font color=red>latex_asc.js</font>  
+(the classes of characters used among keywords), <font color=red>latex_tok.js</font> (an array of the keywords or tokens), 
+<font color=red>latex_acc.js</font> (the array of states, with non vanishing values when the states are "accepted", i.e. 
+when the states correspond to a matched token inside the text to be parsed), and finally 
+<font color=red>latex_dfa.js</font> which contains the transition table. 
+The transition table is a 1-dim array 
+but it represents a 2-dim array, the size of which is the number of character classes times 
+the number of states. Each entry tells you in which state you get when you are in a certain 
+state and you encounter a certain character at the next position in the source text.
+
+<p>Most of commands that are not mathematics-related but rather cosmetic or cross-refs 
+related use tricky regular expressions. It seems to be a rather good compromise 
+on the performance point of view, since regular expressions use built-in functions in browsers, 
+the only drwback beeing that you must parse the text completely for each regular expression 
+you use. By comparison, the use of a DFA allows to parse the text only once whatever can be 
+the number of tokens it is able to match. But the transition table grows dramatically when 
+you increase the number of matching tokens... 
+
+<p>If you often define some aliases in your latex files, using \def or \newcommand etc ... 
+then you can possibly manage them within this javascript application. If there exist 
+a regular expression that can transform your aliases into other managed latex commands 
+or even directly into some html code, you can add your user defined replacements in 
+the <font color=red>latex_aliases.js</font> file. There are two functions in this file, one for replacements 
+done before the DFA acts on the text, and one after. 
+
+<p>You can add some HTML already within you latex source. The only constraint is that 
+the html must not be within methamatical formulas, otherwise the characters &lt; and 
+&gt; will be replaced by &amp;lt; et &amp;gt;, which will corrupt the HTML during 
+the parsing. Elsewhere, your HTML code will be copied onto the output. If you insert images 
+by adding &lt;img src="MyFile.jpg"&gt; within the source, avoid underscores in the filename, 
+they will be badly interpreted.
+
+<p>Of course there must remain a lot of bugs. Feel free to send me an email for 
+any suggestion or bug to report.
+
+<h2>NOTES</h2>
+<ul>
+
+<li>Other latex commands are just considered as plain text. 
+<li>Avoid huge latex inputs. The program is written in javascript which is much slower than 
+any other compiled language.
+<li>By default the debug option is desactivated. To activate it, find in the source 
+of the page the commented paragraph in which the debug string is built. Then, by 
+clicking on the debug button, a new internet explorer window is open which contains 
+information that is useful for debugging. Each token found is shown within the latex source 
+code. Use this functionnality only with <b>very small latex source</b>!!
+<li>On some versions of windows, the latex source cannot contain more than 65536 characters, 
+because an input box on a web page cannot contain more characters. 
+However, it is quite easy to add a simple 
+vbscript in the page source such that the latex source is not read in the input box 
+but rather in a separate text file. As well, the generated html code may be truncated 
+in the output box for large outputs. However, in this case, just open the 
+preview window ("Show" button) and get the full html code by opening the source code 
+of this window (see in the menu "View\Source")
+<li>Image inclusion using \epsfbox (for instance) is not supported, but you can 
+easily add .jpg or .gif images just adding a tag &lt;IMG src="MyImageFile.gif"&gt; 
+inside the latex source. The tag will be propagated "as is" in the HTML output. Note 
+that you should avoid underscores in file names or in the attributes of HTML tags 
+you add (at least until version 1.2 of the script), because they will be treated 
+as subscripts like in math mode. This is corrected in v1.3
+<li>For some commands that uses regular expressions and are followed by a group, 
+ like \centerline{...} \section*{}, do not nest subgroup inside the main group. 
+The commands applies to the text following the next { character and ends at 
+the first } character encountered.
+</ul>
+
+<table width="100%" border=1>
+<tr>
+  <th>LaTeX Command</th><th>Sample usage</th><th width="60%">HTML rendering</th>
+</tr>
+
+<tr>
+  <td>{...}</td><td> { this is a test }</td><td>  this is a test </td>
+</tr>
+<tr>
+  <td>\bf</td><td> { \bf this is a test }</td><td>  <b> this is a test </b></td>
+</tr>
+<tr>
+  <td>\it </td><td> {\it this is a test }</td><td> <i> this is a test </i></td>
+</tr>
+<tr>
+  <td>\small </td><td> { \small \bf this is a test }</td><td>  <font size="-1"> <b> this is a test </b></font> </td>
+</tr>
+<tr>
+  <td>\large </td><td> { \large  this is a test }</td><td>  <font size="+1">  this is a test </font> </td>
+</tr>
+<tr>
+  <td>\Large </td><td> { \it \Large this is a test }</td><td> <i> <font size="+2"> this is a test </font></i> </td>
+</tr>
+<tr>
+  <td>\huge </td><td> { \huge this is a test }</td><td>  <font size="+3"> this is a test </font> </td>
+</tr>
+<tr>
+  <td>Quoted text </td><td> `` quoted text '' </td><td> `` quoted text <font face=symbol>¢</font><font face=symbol>¢</font> </td> 
+</tr>
+<tr>
+  <td> \par </td><td> this is a test \par this is a new paragraph </td><td>this is a test <br> this is a new paragraph</td>
+</tr>
+<tr>
+  <td> \\ (end of line) </td>
+<td> this is a test \\ this is a new paragraph <br>
+\begin{eqnarray}<br>
+ x &=& 1 \\  <br>
+ y &=& 2     % no need of \\ on the last line <br>
+\end{eqnarray}<br>
+</td>
+<td>
+this is a test <br>
+ this is a new paragraph 
+
+<table cellspacing=0  align=center>
+<tr>
+  <td>
+    <table cellspacing=0  border=0>
+    <tr>
+      <td>
+         x 
+      </td>
+    </tr>
+    </table>
+  </td>
+  <td>
+    <table cellspacing=0 >
+    <tr>
+      <td align=center>
+        =
+      </td>
+    </tr>
+    </table>
+  </td>
+  <td>
+    <table cellspacing=0 >
+    <tr>
+      <td align=center>
+         1 <a name="eq0">&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>(0)</font>
+      </td>
+    </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td>
+    <table cellspacing=0 >
+    <tr>
+      <td align=center>
+           y 
+      </td>
+    </tr>
+    </table>
+  </td>
+  <td>
+    <table cellspacing=0 >
+    <tr>
+      <td align=center>
+        =
+      </td>
+    </tr>
+    </table>
+  </td>
+  <td>
+    <table cellspacing=0 >
+    <tr>
+      <td align=center>
+         2     <a name="eq1">&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>(1)</font>
+      </td>
+    </tr>
+    </table>
+  </td>
+</tr>
+</table>
+
+</td>
+</tr>
+
+<tr>
+  <td>Special spaces \, \; \quad \qquad </td><td> X\,this\;is\quad a\qquad test  </td><td> X&nbsp;this&nbsp;&nbsp;is&nbsp;&nbsp;&nbsp; a&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; test   </td> 
+</tr>
+<tr>
+  <td>Backslash followed by a space = space </td><td> X\ Y </td><td> X Y </td> 
+</tr>
+<tr>
+  <td> Math mode $ .... $ </td><td> $ e=mc^2 $ </td><td> e=mc<sup>2</sup> </td>
+</tr>
+<tr>
+  <td> Centered math mode $$ .... $$ </td><td> $$ e=mc^2 $$</td><td align=center> e=mc<sup>2</sup> </td>
+</tr>
+<tr>
+  <td> Greek letters \alpha&nbsp;\beta&nbsp;\gamma ... </td><td> $ \alpha + \beta + \ldots + \zeta $ </td><td> <font face=symbol>a</font> + <font face=symbol>b</font> + <font face=symbol>¼</font> + <font face=symbol>z</font>  </td> 
+</tr>
+<tr>
+  <td> Variant of Greek letters \varphi \varepsilon \vartheta \varpi \varrho \varsigma  </td><td> $ \varphi + \varepsilon + \vartheta + \varpi - \varrho * \varsigma^2 $ </td><td> <font face=symbol>j</font> + <font face=symbol>e</font> + <font face=symbol>J</font> + <font face=symbol>v</font> <font face=symbol>-</font> <font face=symbol>r</font> * <font face=symbol>V</font><sup>2</sup> </td> 
+</tr>
+<tr>
+  <td>\ell (equiv to {\it l} )</td><td> \ell </td><td> <i>l</i> </td> 
+</tr>
+<tr>
+  <td>\aleph </td><td>\aleph  </td><td> <font face=symbol>À</font>  </td> 
+</tr>
+<tr>
+  <td>\i</td><td>\i  </td><td> <font face=symbol>i</font> </td> 
+</tr>
+<tr>
+  <td>\j </td><td>\j  </td><td> j </td> 
+</tr>
+<tr>
+  <td>\wp </td><td>\wp  </td><td> <font face=symbol>Ã</font>   </td> 
+</tr>
+<tr>
+  <td>\re </td><td>\re  </td><td> <font face=symbol>Â</font>  </td> 
+</tr>
+<tr>
+  <td>\im </td><td> \im </td><td> <font face=symbol>Á</font> </td> 
+</tr>
+<tr>
+  <td>\partial </td><td> \partial </td><td> <font face=symbol>¶</font> </td> 
+</tr>
+<tr>
+  <td>\infty </td><td> \infty </td><td> <font face=symbol>¥</font>    </td> 
+</tr>
+<tr>
+  <td>\angle </td><td> \angle </td><td> <font face=symbol>Ð</font> </td> 
+</tr>
+<tr>
+  <td>\rangle </td><td> \rangle </td><td> <font face=symbol>ñ</font> </td> 
+</tr>
+<tr>
+  <td>\langle </td><td>\langle  </td><td> <font face=symbol>á</font> </td> 
+</tr>
+<tr>
+  <td>\nabla </td><td>\nabla </td><td> <font face=symbol>Ñ</font>   </td> 
+</tr>
+<tr>
+  <td>\Box </td><td>  $\Box \Phi + m^2\Phi = 0$ </td><td><font size="-2"><sup>[<u>&#175;</u>]</sup></font> <font face=symbol>F</font> + m<sup>2</sup><font face=symbol>F</font> = 0 </td>
+</tr>
+<tr>
+  <td>\surd </td><td>\surd  </td><td> <font face=symbol>Ö</font> </td> 
+</tr>
+<tr>
+  <td>\vert </td><td>\vert  </td><td> <font face=symbol>|</font>  </td> 
+</tr>
+<tr>
+  <td>\Vert </td><td>\Vert  </td><td> <font face=symbol>||</font> </td> 
+</tr>
+<tr>
+  <td>\rceil </td><td>\rceil  </td><td> <font face=symbol>ù</font>  </td> 
+</tr>
+<tr>
+  <td>\rfloor </td><td>\rfloor  </td><td> <font face=symbol>û</font> </td> 
+</tr>
+<tr>
+  <td>\lceil </td><td>\lceil  </td><td> <font face=symbol>é</font>  </td> 
+</tr>
+<tr>
+  <td>\lfloor </td><td>\lfloor  </td><td> <font face=symbol>ë</font>  </td> 
+</tr>
+<tr>
+  <td>\{ \} \[ \] </td><td> \{ \} \[ \]  </td><td> { } [ ]  </td> 
+</tr>
+<tr>
+  <td>\backslash</td><td> \backslash </td><td> \ </td> 
+</tr>
+<tr>
+  <td>\forall </td><td> \forall </td><td><font face=symbol>"</font>   </td> 
+</tr>
+<tr>
+  <td>\exists </td><td>\exists  </td><td><font face=symbol>$</font>  </td> 
+</tr>
+<tr>
+  <td>\neg </td><td>\neg  </td><td><font face=symbol>Ø</font>   </td> 
+</tr>
+<tr>
+  <td>\clubsuit </td><td>\clubsuit  </td><td><font face=symbol>§</font>  </td> 
+</tr>
+<tr>
+  <td>\diamondsuit </td><td>\diamondsuit  </td><td><font face=symbol>¨</font> </td> 
+</tr>
+<tr>
+  <td>\heartsuit </td><td>\heartsuit  </td><td><font face=symbol>©</font>  </td> 
+</tr>
+<tr>
+  <td>\spadesuit </td><td>\spadesuit  </td><td> <font face=symbol>ª</font>  </td> 
+</tr>
+<tr>
+  <td>\top </td><td>\top  </td><td> T </td> 
+</tr>
+<tr>
+  <td>\perp </td><td>\perp  </td><td> <font face=symbol>^</font> </td> 
+</tr>
+<tr>
+  <td>\circ </td><td>\circ  </td><td><font face=symbol>°</font> </td> 
+</tr>
+<tr>
+  <td>\~ </td><td>\~  </td><td> &#126; </td> 
+</tr>
+<tr>
+  <td>\sim </td><td>\sim  </td><td> <font face=symbol>&#126;</font> </td> 
+</tr>
+<tr>
+  <td>&lt; &gt;</td><td>&lt;font color=red &gt; $ x &lt; 2 $ &lt;/font&gt; </td><td> <font color=red>  x &lt; 2 </font>   </td> 
+</tr>
+<tr>
+  <td> ~ (non breaking space)</td><td> usage~: </td><td>usage&nbsp;: </td> 
+</tr>
+<tr>
+  <td>\ll </td><td>\ll  </td><td>&lt;&lt;  </td> 
+</tr>
+<tr>
+  <td>\gg </td><td>\gg  </td><td>&gt;&gt;  </td> 
+</tr>
+<tr>
+  <td>\star </td><td>\star  </td><td> <font face=symbol>*</font>            </td> 
+</tr>
+<tr>
+  <td>\diamond </td><td>\diamond  </td><td> <font face=symbol>à</font> </td> 
+</tr>
+<tr>
+  <td>\bullet </td><td>\bullet  </td><td> <font face=symbol>·</font> </td> 
+</tr>
+<tr>
+  <td>\cdot </td><td>\cdot  </td><td> &#183;  </td> 
+</tr>
+<tr>
+  <td>\cup </td><td>\cup </td><td> <font face=symbol>È</font> </td> 
+</tr>
+<tr>
+  <td>\cap </td><td>\cap </td><td> <font face=symbol>Ç</font> </td> 
+</tr>
+<tr>
+  <td>\pm </td><td>\pm </td><td> <font face=symbol>±</font> </td> 
+</tr>
+<tr>
+  <td>\mp </td><td>\mp </td><td>  <span style="position:relative;top:-4pt;left:3pt;"><font face=symbol>-</font></span><span style="position:relative;left:-3pt;"><small>+</small></span> </td> 
+</tr>
+<tr>
+  <td>\vee </td><td>\vee </td><td> <font face=symbol>Ú</font>  </td> 
+</tr>
+<tr>
+  <td>\wedge </td><td>\wedge  </td><td> <font face=symbol>Ù</font> </td> 
+</tr>
+<tr>
+  <td>\oplus </td><td>\oplus </td><td><font face=symbol>Å</font>  </td> 
+</tr>
+<tr>
+  <td>\otimes </td><td>\otimes </td><td><font face=symbol>Ä</font>  </td> 
+</tr>
+<tr>
+  <td>\oslash </td><td>\oslash </td><td><font face=symbol>Æ</font>  </td> 
+</tr>
+
+<tr>
+  <td>\bigcap </td><td>\bigcap  </td><td><font face=symbol>Ç</font> </td> 
+</tr>
+<tr>
+  <td>\bigcup </td><td>\bigcup </td><td><font face=symbol>È</font> </td> 
+</tr>
+<tr>
+  <td>\bigvee </td><td>\bigvee </td><td> <font face=symbol>Ú</font>    </td> 
+</tr>
+<tr>
+  <td>\bigwedge </td><td>\bigwedge </td><td><font face=symbol>Ù</font>  </td> 
+</tr>
+<tr>
+  <td>\bigotimes </td><td>\bigotimes </td><td><font face=symbol>Ä</font>  </td> 
+</tr>
+<tr>
+  <td>\bigoplus </td><td>\bigoplus </td><td><font face=symbol>Å</font>  </td> 
+</tr>
+<tr>
+  <td>\subset </td><td>\subset  </td><td><font face=symbol>Ì</font>           </td> 
+</tr>
+<tr>
+  <td>\subseteq </td><td>\subseteq  </td><td><font face=symbol>Í</font>  </td> 
+</tr>
+<tr>
+  <td>\supset </td><td>\supset  </td><td><font face=symbol>É</font>  </td> 
+</tr>
+<tr>
+  <td>\supseteq </td><td>\supseteq  </td><td><font face=symbol>Ê</font>  </td> 
+</tr>
+<tr>
+  <td>\not\subset  </td><td>\not\subset   </td><td> <font face=symbol>Ë</font> </td> 
+</tr>
+<tr>
+  <td>\div  </td><td>\div   </td><td> <font face=symbol>¸</font> </td> 
+</tr>
+<tr>
+  <td>\times  </td><td>\times   </td><td> &times; </td> 
+</tr>
+<tr>
+  <td>\lesim  </td><td>\lesim   </td><td> &lt;&nbsp; </td> 
+</tr>
+<tr>
+  <td>\gesim  </td><td>\gesim   </td><td> &gt;&nbsp; </td> 
+</tr>
+<tr>
+  <td>\mid  </td><td>\mid   </td><td>  |  </td> 
+</tr>
+<tr>
+  <td>\leq </td><td>\leq  </td><td><font face=symbol>£</font>  </td> 
+</tr>
+<tr>
+  <td>\geq </td><td>\geq  </td><td><font face=symbol>³</font>  </td> 
+</tr>
+<tr>
+  <td>\le</td><td>\le  </td><td><font face=symbol>£</font>  </td> 
+</tr>
+<tr>
+  <td>\ge </td><td>\ge  </td><td><font face=symbol>³</font>  </td> 
+</tr>
+<tr>
+  <td>\equiv </td><td>\equiv  </td><td><font face=symbol>º</font>    </td> 
+</tr>
+<tr>
+  <td>\approx </td><td>\approx  </td><td><font face=symbol>»</font>   </td> 
+</tr>
+<tr>
+  <td>\neq </td><td>\neq  </td><td><font face=symbol>¹</font>  </td> 
+</tr>
+<tr>
+  <td>\in </td><td>\in  </td><td><font face=symbol>Î</font> </td> 
+</tr>
+<tr>
+  <td>\notin </td><td>\notin  </td><td><font face=symbol>Ï</font>  </td> 
+</tr>
+<tr>
+  <td>\owns </td><td>\owns  </td><td><font face=symbol>'</font>  </td> 
+</tr>
+<tr>
+  <td>\cong </td><td>\cong  </td><td><font face=symbol>@</font>  </td> 
+</tr>
+<tr>
+  <td>\propto </td><td>\propto  </td><td><font face=symbol>µ</font>    </td> 
+</tr>
+<tr>
+  <td>\leftarrow </td><td>\leftarrow  </td><td><font face=symbol>¬</font>   </td> 
+</tr>
+<tr>
+  <td>\rightarrow = \mapsto </td><td>\rightarrow  </td><td><font face=symbol>®</font>  </td> 
+</tr>
+<tr>
+  <td>\uparrow </td><td>\uparrow  </td><td><font face=symbol>­</font>   </td> 
+</tr>
+<tr>
+  <td>\downarrow </td><td>\downarrow  </td><td><font face=symbol>¯</font>   </td> 
+</tr>
+<tr>
+  <td>\leftrightarrow </td><td>\leftrightarrow  </td><td><font face=symbol>«</font>     </td> 
+</tr>
+<tr>
+  <td>\Leftarrow </td><td>\Leftarrow  </td><td><font face=symbol>Ü</font>   </td> 
+</tr>
+<tr>
+  <td>\Rightarrow </td><td>\Rightarrow  </td><td><font face=symbol>Þ</font>   </td> 
+</tr>
+<tr>
+  <td>\Leftrightarrow </td><td>\Leftrightarrow  </td><td><font face=symbol>Û</font>  </td> 
+</tr>
+<tr>
+  <td>\Uparrow </td><td>\Uparrow  </td><td><font face=symbol>Ý</font>  </td> 
+</tr>
+<tr>
+  <td>\Downarrow </td><td>\Downarrow  </td><td><font face=symbol>ß</font>   </td> 
+</tr>
+<tr>
+  <td>\ldots </td><td>\ldots  </td><td><font face=symbol>¼</font>   </td> 
+</tr>
+<tr>
+  <td>\vdots </td><td>\vdots  </td><td>: </td> 
+</tr>
+<tr>
+  <td>\ddots </td><td>\ddots  </td><td>\</td> 
+</tr>
+<tr>
+  <td>\dagger </td><td>\dagger  </td><td> &#134;  </td> 
+</tr>
+<tr>
+  <td>\ddagger </td><td>\ddagger  </td><td> &#135; </td> 
+</tr>
+<tr>
+  <td>\lim </td><td> \lim_{x\rightarrow 0} f=0 </td><td> lim<sub>x<font face=symbol>®</font> 0</sub> f=0  </td> 
+</tr>
+<tr>
+  <td>\overbrace </td><td>\overbrace{ some text}  </td><td> Not yet implemented </td> 
+</tr>
+<tr>
+  <td>\underbrace </td><td>\underbrace{ some text}  </td><td> Not yet implemented </td> 
+</tr>
+<tr>
+  <td>\overline </td><td>\overline{A+\bar B} </td><td> <span style="border-top:1 solid black;">A+<span style="position:relative;top:-6pt;left:4pt;"><font face=symbol>-</font></span><span style="position:relative;left:-4pt;">B</span></span> </td> 
+</tr>
+<tr>
+  <td>\bar </td><td> B+\bar  A  </td><td> B+<span style="position:relative;top:-6pt;left:4pt;"><font face=symbol>-</font></span><span style="position:relative;left:-4pt;">A</span> </td> 
+</tr>
+<tr>
+  <td>\tilde \hat </td><td> \hat B+\tilde  x  </td><td>  <span style="position:relative;top:-7pt;left:4pt;">^</span><span style="position:relative;left:-4pt;">B</span>+<span style="position:relative;top:-7pt;left:4pt;"><font face=symbol>&#126;</font></span><span style="position:relative;left:-4pt;">x</span> </td> 
+</tr>
+<tr>
+  <td>Exponents and subscripts </td><td> $ \sigma_0 + \lambda_\rho + \Phi_{\alpha=\beta} = a^7+a^\beta $ </td><td> <font face=symbol>s</font><sub>0</sub> + <font face=symbol>l</font><sub><font face=symbol>r</font></sub> + <font face=symbol>F</font><sub><font face=symbol>a</font>=<font face=symbol>b</font></sub> = a<sup>7</sup>+a<sup><font face=symbol>b</font></sup> </td> 
+</tr>
+<tr>
+  <td> vectors </td><td> $ S = \vec X \cdot \vec Y $ </td><td> S = <span style="position:relative;top:-9pt;left:6pt;"><font face="symbol" size="-1">&#174;</font></span><span style="position:relative;left:-5pt;">X</span> &#183; <span style="position:relative;top:-9pt;left:6pt;"><font face="symbol" size="-1">&#174;</font></span><span style="position:relative;left:-5pt;">Y</span> </td> 
+</tr>
+<tr>
+  <td> \over </td><td> 1 \over 4 </td><td> 1/4 </td> 
+</tr>
+<tr>
+  <td> \frac{...}{....}</td><td> \frac{p+q}{p-q}  </td><td> 
+<table border=0 align="center">
+<tr>
+  <td nowrap align="center">
+     
+  </td>
+  <td nowrap align="center">
+    <table  border=0 cellspacing=0 cellpadding=0>
+    <tr>
+      <td nowrap align="center">
+        p+q
+      </td>
+    </tr>
+    </table>
+    <div class=hrcomp><hr noshade size=1></div>
+    <table  border=0 cellspacing=0 cellpadding=0>
+    <tr>
+      <td nowrap align="center">
+        p<font face=symbol>-</font>q
+      </td>
+    </tr>
+    </table>
+  </td>
+  <td nowrap align="center">
+     
+  </td>
+</tr>
+</table>
+ </td> 
+</tr>
+
+
+<tr>
+  <td>Integrals in inline mode</td><td> $ \Omega = \int_0^1 d\sigma + \int_\Sigma \omega + \int_{x=0}^{x=1-a} d\mu $ </td><td> <font face=symbol>W</font> = <font face=symbol>ò</font><sub>0</sub><sup>1</sup> d<font face=symbol>s</font> + <font face=symbol>ò</font><sub><font face=symbol>S</font></sub> <font face=symbol>w</font> + <font face=symbol>ò</font><sub>x=0</sub><sup>x=1<font face=symbol>-</font>a</sup> d<font face=symbol>m</font> </td> 
+</tr>
+<tr>
+  <td>Integrals in centered math mode </td><td> \begin{equation} \Omega = \int_0^1 d\sigma + \int_\Sigma \omega + \int_{x=0}^{x=1-a} d\mu \end{equation}  </td>
+<td> 
+
+<table cellspacing=0  border=0 align=center>
+<tr>
+  <td nowrap align="center">
+     <font face=symbol>W</font> = 
+  </td>
+  <td align=left class=cl>
+    <font face=symbol>
+      ó<br>
+      õ
+    </font>
+  </td>
+  <td nowrap align=center>
+    
+  </td>
+  <td nowrap align=left>
+    <table cellspacing=0 >
+    <tr>
+      <td valign=top>
+        <table cellspacing=0 border=0 >
+        <tr>
+          <td nowrap align=center>
+            <sup>1</sup>
+          </td>
+        </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td valign=bottom>
+        <table cellspacing=0 border=0 >
+        <tr>
+          <td nowrap align=center>
+            <sub>0</sub>
+          </td>
+        </tr>
+        </table>
+      </td>
+    </tr>
+    </table>
+  </td>
+  <td nowrap align=center>
+     d<font face=symbol>s</font> + 
+  </td>
+  <td align=left class=cl>
+    <font face=symbol>
+      ó<br>
+      õ
+    </font>
+  </td>
+  <td nowrap align=center>
+    
+  </td>
+  <td nowrap align=left>
+    <table cellspacing=0 >
+    <tr>
+      <td valign=top>
+        <table cellspacing=0 border=0 >
+        <tr>
+          <td nowrap align=center>
+            &nbsp;
+          </td>
+        </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td valign=bottom>
+        <table cellspacing=0 border=0 >
+        <tr>
+          <td nowrap align=center>
+            <sub><font face=symbol>S</font></sub>
+          </td>
+        </tr>
+        </table>
+      </td>
+    </tr>
+    </table>
+  </td>
+  <td nowrap align=center>
+     <font face=symbol>w</font> + 
+  </td>
+  <td align=left class=cl>
+    <font face=symbol>
+      ó<br>
+      õ
+    </font>
+  </td>
+  <td nowrap align=center>
+    
+  </td>
+  <td nowrap align=left>
+    <table cellspacing=0 >
+    <tr>
+      <td valign=top>
+        <table cellspacing=0 border=0>
+        <tr>
+          <td nowrap align=center>
+            <sup>x=1<font face=symbol>-</font>a</sup></sup>
+          </td>
+        </tr>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td valign=bottom>
+        <table cellspacing=0 border=0 >
+        <tr>
+          <td nowrap align=center>
+            <sub>x=0</sub></sub>
+          </td>
+        </tr>
+        </table>
+      </td>
+    </tr>
+    </table>
+  </td>
+  <td nowrap align=center>
+     d<font face=symbol>m</font> <a name="eq0">&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>(0)</font>
+  </td>
+</tr>
+</table>
+
+
+</td> 
+</tr>
+<tr>
+  <td>Sums or prod in inline mode </td><td> $\sum_{i=0}^N C_i^N + \prod_0^\Gamma a_i $ </td><td> <font face=symbol>å</font><sub>i=0</sub><sup>N</sup> C<sub>i</sub><sup>N</sup> + <font face=symbol>Õ</font><sub>0</sub><sup><font face=symbol>G</font></sup> a<sub>i</sub> </td>
+<tr>
+  <td> Sums or prod in centered math mode </td><td> $$\sum_{i=0}^N C_i^N + \prod_0^\Gamma a_i $$ </td>
+<td>  
+
+
+<table cellspacing=0  border=0 align=center>
+<tr>
+  <td nowrap align=center>
+    
+  </td>
+  <td nowrap align=center>
+    <sub>N</sub><br><font face=symbol>å</font><br>
+<sup>i=0</sup>
+  </td>
+  <td nowrap align=center>
+     C<sub>i</sub><sup>N</sup> + 
+  </td>
+  <td nowrap align=center>
+    <sub><font face=symbol>G</font></sub><br><font face=symbol>Õ</font><br>
+<sup>0</sup>
+  </td>
+  <td nowrap align=center>
+     a<sub>i</sub> 
+  </td>
+</tr>
+</table>
+
+
+</td> 
+</tr>
+<tr>
+  <td> </td><td>  </td><td>  </td> 
+</tr>
+
+<tr>
+  <td>\lefteqn{</td><td nowrap> \begin{eqnarray}<br>\lefteqn{ x =  } \\ <br> &amp;=&amp; x(x+1) \\ <br> &amp;=&amp; x^2+x <br>\end{eqnarray}</td><td><table border=0 align=center>
+<tr>
+  <td>
+     x = 
+  </td>
+</tr>
+<tr>
+  <td>
+ 
+  </td>
+</tr>
+<tr>
+  <td>
+ 
+  </td>
+  <td nowrap align="center">
+    =
+  </td>
+  <td nowrap align="center">
+     x(x+1) <a name="eq0">&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>(0)</font>
+  </td>
+</tr>
+<tr>
+  <td>
+ 
+  </td>
+  <td nowrap align="center">
+    =
+  </td>
+  <td nowrap align="center">
+     x<sup>2</sup>+x <a name="eq1">&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>(1)</font>
+  </td>
+</tr>
+</table>
+</td>
+</tr>
+
+
+<tr>
+  <td>\stackrel{</td><td>\stackrel{\leftrightarrow}{\partial_\mu} </td><td> <span style="position:relative;top:-9pt;left:6pt;"><small><font face=symbol>«</font></small></span><span style="position:relative;left:-5pt;"><font face=symbol>¶</font><sub><font face=symbol>m</font></sub></span></td>
+</tr>
+
+
+<tr>
+  <td>\begin{equation} ... \end{equation}</td><td>\begin{equation}<br> 
+\psi = e^{ikx+ \sqrt{\phi^2+1}  } \label{toto}<br>
+\end{equation}<br>
+&nbsp;<br>
+\begin{equation} e=mc^2 \end{equation}<br>
+</td><td> <table border=0 align="center">
+<tr>
+  <td nowrap align="center">
+     <font face=symbol>y</font> = e<sup>ikx+ <font face=symbol>Ö</font><span style="border-top:1 solid black;"><font face=symbol>f</font><sup>2</sup>+1</span>  </sup> <a name="reftoto">
+<a name="eq0">&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>(0)</font>
+  </td>
+</tr>
+</table>
+<br>
+<br>
+
+<table border=0 align="center">
+<tr>
+  <td nowrap align="center">
+     e=mc<sup>2</sup> <a name="eq1">&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>(1)</font>
+  </td>
+</tr>
+</table>
+</td>
+</tr>
+
+
+<tr>
+  <td>\begin{array} ... \end{array}</td>
+<td>
+\begin{eqnarray}<br>
+\sigma & = & \left[\begin{array}{cc} 0 & 1 \\ <br>
+1 & 0 \end{array}\right] \\<br>
+\lambda & = & \sigma^2<br>
+\end{eqnarray}
+</td>
+<td> 
+
+<table cellspacing=0  align=center>
+<tr>
+  <td>
+    <table cellspacing=0  border=0>
+    <tr>
+      <td>
+        <font face=symbol>s</font> 
+      </td>
+    </tr>
+    </table>
+  </td>
+  <td>
+    <table cellspacing=0 >
+    <tr>
+      <td align=center>
+         = 
+      </td>
+    </tr>
+    </table>
+  </td>
+  <td>
+    <table cellspacing=0 >
+    <tr>
+      <td align=center>
+         
+      </td>
+      <td style="border-left:1 solid black;border-top:1 solid black;border-bottom:1 solid black;">&nbsp;
+      </td>
+      <td>
+        
+      </td>
+      <td>
+        <table cellspacing=0 align=center>
+        <tr>
+          <td>
+            <table cellspacing=0>
+            <tr>
+              <td>
+                 0 
+              </td>
+            </tr>
+            </table>
+          </td>
+          <td>
+            <table cellspacing=0 >
+            <tr>
+              <td align=center>
+                 1 
+              </td>
+            </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table cellspacing=0 >
+            <tr>
+              <td align=center>
+                 1 
+              </td>
+            </tr>
+            </table>
+          </td>
+          <td>
+            <table cellspacing=0 >
+            <tr>
+              <td align=center>
+                 0 
+              </td>
+            </tr>
+            </table>
+          </td>
+        </tr>
+        </table>
+      </td>
+      <td>
+        
+      </td>
+      <td style="border-right:1 solid black;border-top:1 solid black;border-bottom:1 solid black;">&nbsp;
+      </td>
+      <td>
+         
+      </td>
+    </tr>
+    </table>
+  </td>
+  <td>
+    <table cellspacing=0 >
+    <tr>
+      <td align=center>
+        <a name="eq0">&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>(0)</font>
+      </td>
+    </tr>
+    </table>
+  </td>
+</tr>
+<tr>
+  <td>
+    <table cellspacing=0 >
+    <tr>
+      <td align=center>
+        <font face=symbol>l</font> 
+      </td>
+    </tr>
+    </table>
+  </td>
+  <td>
+    <table cellspacing=0 >
+    <tr>
+      <td align=center>
+         = 
+      </td>
+    </tr>
+    </table>
+  </td>
+  <td>
+    <table cellspacing=0 >
+    <tr>
+      <td align=center>
+         <font face=symbol>s</font><sup>2</sup>
+      </td>
+    </tr>
+    </table>
+  </td>
+  <td>
+    <table cellspacing=0 >
+    <tr>
+      <td align=center>
+        <a name="eq1">&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>(1)</font>
+      </td>
+    </tr>
+    </table>
+  </td>
+</tr>
+</table>
+
+
+</td>
+</tr>
+<tr>
+  <td>\matrix{ .... } </td><td>to be replaced?</td><td> Not Yet Implemented </td>
+</tr>
+<tr>
+  <td>\begin{eqnarray} ... \end{eqnarray}</td><td>\begin{eqnarray} <br>
+y &=& x(x+1) \\ <br> 
+&=& x^2+x  <br>
+\end{eqnarray}</td><td> <table border=0 align=center>
+<tr>
+  <td>
+    y 
+  </td>
+  <td nowrap align="center">
+    =
+  </td>
+  <td nowrap align="center">
+     x(x+1) <a name="eq0">&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>(0)</font>
+  </td>
+</tr>
+<tr>
+  <td>
+ 
+  </td>
+  <td nowrap align="center">
+    =
+  </td>
+  <td nowrap align="center">
+     x<sup>2</sup>+x <a name="eq1">&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>(1)</font>
+  </td>
+</tr>
+</table>
+ </td>
+</tr>
+
+<tr>
+  <td>\nonumber</td><td> \nonumber</td><td>suppresses numbering of the current equation or equation line</td>
+</tr>
+
+
+<tr>
+  <td>\ref </td><td> see eq \ref{toto}<br>&nbsp;<br>
+\begin{equation} <br>
+\psi = e^{ikx+ \sqrt{\phi^2+1}  } \label{toto}<br>
+\end{equation}<br>
+  </td><td> see eq <a href="#reftoto">(0)</a>
+
+<table border=0 align="center">
+<tr>
+  <td nowrap align="center">
+     <font face=symbol>y</font> = e<sup>ikx+ <font face=symbol>Ö</font><span style="border-top:1 solid black;"><font face=symbol>f</font><sup>2</sup>+1</span>  </sup> <a name="reftoto">
+<a name="eq0">&nbsp;&nbsp;&nbsp;&nbsp;<font color=blue>(0)</font>
+  </td>
+</tr>
+</table>
+<br>
+ </td> 
+</tr>
+<tr>
+  <td> Bibliography </td><td> see in ref \cite{MyBook} <p>&nbsp; \begin{thebibliography} \bibitem{MyResume} This is my resume <br> \bibitem{MyBook} Reference of my book \end{thebibliography}  </td>
+<td>  
+see in ref <a href="#bib.1">[1]</a> <p>&nbsp; 
+<ol start=0>
+ 
+<a name="bib.0"><li value=0> This is my resume <br> 
+<a name="bib.1"><li value=1> Reference of my book 
+</ol>
+
+
+</td> 
+</tr>
+
+<tr>
+<td>\section, \subsection, \subsubsection</td>
+<td>
+
+
+\section{Introduction} <br>
+blabla <br>
+\subsection{What is latex4web?} <br>
+blabla <br>
+\subsubsection*{The star skips automatic increase of section numbers} <br>
+blabla <br>
+\subsubsection{This is numbered} <br>
+...... blabla <br>
+\subsubsection{This one also} <br>
+ <br>
+blabla <br>
+\subsection{how to use the soft?} <br>
+blabla <br>
+\section{Next part} <br>
+... <br>
+\subsection{subsection of next part} <br>
+
+</td>
+<td>
+<p><a name="toc.1"><h1>1&nbsp;Introduction</h1> 
+blabla
+<p><a name="toc.1.1"><h2>1.1&nbsp;What is latex4web?</h2>
+blabla
+<h3>The star skips automatic increase of section numbers</h3>
+blabla
+<p><a name="toc.1.1.1"><h3>1.1.1&nbsp;This is numbered</h3>
+...... blabla
+<p><a name="toc.1.1.2"><h3>1.1.2&nbsp;This one also</h3>
+
+blabla
+<p><a name="toc.1.2"><h2>1.2&nbsp;how to use the soft?</h2>
+blabla
+<p><a name="toc.2"><h1>2&nbsp;Next part</h1>
+...
+<p><a name="toc.2.1"><h2>2.1&nbsp;subsection of next part</h2>
+
+<hr>
+<p><h1>Table Of Contents</h1>
+<p><a href="#toc.1"><h1>1&nbsp;Introduction</h1></a>
+<p><a href="#toc.1.1"><h2>1.1&nbsp;What is latex4web?</h2></a>
+<p><a href="#toc.1.1.1"><h3>1.1.1&nbsp;This is numbered</h3></a>
+<p><a href="#toc.1.1.2"><h3>1.1.2&nbsp;This one also</h3></a>
+<p><a href="#toc.1.2"><h2>1.2&nbsp;how to use the soft?</h2></a>
+<p><a href="#toc.2"><h1>2&nbsp;Next part</h1></a>
+<p><a href="#toc.2.1"><h2>2.1&nbsp;subsection of next part</h2></a>
+
+</td>
+</tr>
+<tr>
+<td>
+\begin{itemize}...\item ... \end{itemize}
+</td>
+<td>
+\begin{itemize}<br>
+\item[-]{element1}<br>
+\item[*]{element2}<br>
+\item{element3}<br>
+\item element4 <br>
+\end{itemize}
+</td>
+<td>
+<ul>
+<br>-&nbsp;element1
+<br>*&nbsp;element2
+
+<li>element3
+
+<li> element4 
+</ul>
+</td>
+</tr>
+
+
+
+<!-- end of basic samples -->
+</table>
+
+
+</body>
+</html>
