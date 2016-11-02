@@ -1,5 +1,5 @@
-## Introduction to GIS Analysis for Applied Economics
+# Introduction to GIS Analysis for Applied Economics
 
-# Juan Carlos Muñoz-Mora - juancarlos.munoz@upf.edu - Pompue Fabra University
+### Juan Carlos Muñoz-Mora - juancarlos.munoz@upf.edu - Pompue Fabra University
 
 ## Table of contents
